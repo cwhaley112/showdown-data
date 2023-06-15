@@ -69,7 +69,7 @@ def main():
 
             if battle_data.status_code != 200:
                 logger.error(
-                    f"Received http status code {recent_battles.status_code} for battle_id {battle_id}"
+                    f"Received http status code {battle_data.status_code} for battle_id {battle_id}"
                 )
                 time.sleep(1)
                 continue
